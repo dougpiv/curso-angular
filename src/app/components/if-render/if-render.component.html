@@ -1,0 +1,7 @@
+<div class="class">
+  <div *ngIf="canShow">Esta aparecendo pois está permitido</div>
+  <div *ngIf="name === 'Douglas'; else wrongName">Nome = Douglas</div>
+  <ng-template #wrongName>
+    Nome errado
+  </ng-template>
+</div>
