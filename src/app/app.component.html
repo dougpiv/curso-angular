@@ -1,20 +1,8 @@
-<h1>Hello World!</h1>
-<h2>Teste</h2>
-<app-first-component></app-first-component>
-<app-second-component></app-second-component>
-<div>
-  <a href="#">link geral</a>
-</div>
-<app-parent-data [name]='userName' [userData]='userData'></app-parent-data>
-
-<app-directives></app-directives>
-
-<app-if-render></app-if-render>
-
-<app-eventos></app-eventos>
-<h1>Testando changeNumber2: {{myNumber2}}</h1>
-<app-emitter (changeNumber2)="onChangeNumber2()"></app-emitter>
-
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<p>header</p>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/list">Lista</a>
+  <a routerLink="/if">If</a>
+</nav>
+<router-outlet></router-outlet>
+<p>footer</p>
